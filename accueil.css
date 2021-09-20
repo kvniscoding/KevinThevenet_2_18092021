@@ -1,0 +1,46 @@
+/* Ajout de la police utilisée */
+@font-face
+{
+	font-family: 'Raleway-VariableFont_wght';
+	src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+/* ------ Paramètres global pour la page ------ */
+/* On applique la police Raleway pour sur toute la page */
+*
+{
+	font-family: Raleway-VariableFont_wght, Verdana, serif;
+}
+
+/* Titres de la page et des sections hébergements et activités */
+h1, h2
+{
+	font-weight: bold;
+	font-size: x-large;
+}
+
+/* Titres des hébergements et des activités */
+h3
+{
+	font-weight: bold;
+	font-size: large;
+}
+
+/* Titres du footer */
+h4
+{
+	font-weight: bold;
+	font-size: medium;
+}
+
+/* Liens */
+a
+{
+	text-decoration: none;
+}
+
+/* Paragraphes et listes du footer */
+{
+	font-weight: bold;
+	font-size: 1em;
+}
