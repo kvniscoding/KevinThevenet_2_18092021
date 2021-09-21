@@ -1,1 +1,34 @@
 /* Fichier CSS pour le Projet 2: Développement de la maquette de l'index du site Reservia */
+
+/* Définition d'une taille standard pour les fonts de la page*/
+*
+{
+	font-size: 1em;
+}
+
+/* ------ Début du bloc entourant toute la page ------ */
+#blockPage
+{
+	width: 1280px;
+	background-color: yellow;
+	margin: auto;
+}
+/* ------ Fin du bloc entourant la page ------ */
+
+
+
+/* ------ Début du HEADER ------ */
+
+/* ------ Fin du HEADER ------ */
+
+
+
+/* ------ Début du MAIN ------*/
+
+/* ------ Fin du MAIN ------ */
+
+
+
+/* ------ Début du FOOTER ------ */
+
+/* ------ Fin du FOOTER ------ */
