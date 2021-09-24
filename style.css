@@ -1,15 +1,29 @@
 /* Fichier CSS pour le Projet 2: Développement de la maquette de l'index du site Reservia */
 
-/* Définition d'une taille standard pour les fonts de la page*/
+/* Définition d'options générales de la page*/
 * {
 	font-size: 1em;
 }
+h3, h4 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+
 
 /* ------ Début du bloc entourant toute la page ------ */
 #blockPage {
+	min-width: 375px;
 	max-width: 1440px;
 	margin: auto;
-	padding: 40px;
+	/* padding: 40px; */
 	background-color: red;
 }
 /* ------ Fin du bloc entourant la page ------ */
@@ -59,30 +73,29 @@ p {
 
 
 /* ------ Début du MAIN ------*/
-/* block des hébergements et des hébergements populaires */
-#blockHebergements {
-	width: auto;
-	background-color: yellow;
-	display: flex;
-	justify-content: space-between;
-	align-items: stretch;
-}
 
-/* Block des hébergements */
-article {
-	width: 780px;
-	background-color: blue;
-}
-
-/* Block des hébergements populaires */
-aside {
-	width: 460px;
-	background-color: green;
-}
 /* ------ Fin du MAIN ------ */
 
 
 
 /* ------ Début du FOOTER ------ */
+footer {
+	max-width: 1440px;
+	min-width: 375px;
+	padding: 20px 0 20px 0;
+	font-family: 'Raleway', sans-serif;
+	background-color: #F2F2F2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
 
+/* Paramètres généraux des listes */
+.listeFooter {
+	min-width: 375px;
+	width: 33%;
+}
+.puceListeFooter {
+	font-size: 0.9em;;
+}
 /* ------ Fin du Footer ------ */
