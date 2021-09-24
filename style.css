@@ -1,34 +1,109 @@
 /* Fichier CSS pour le Projet 2: Développement de la maquette de l'index du site Reservia */
 
 /* Définition d'une taille standard pour les fonts de la page*/
-*
-{
+* {
 	font-size: 1em;
 }
 
 /* ------ Début du bloc entourant toute la page ------ */
-#blockPage
-{
-	width: 1280px;
-	background-color: yellow;
+#blockPage {
+	width: 1440px;
 	margin: auto;
+	padding: 30px;
+	background-color: red;
 }
 /* ------ Fin du bloc entourant la page ------ */
 
 
 
 /* ------ Début du HEADER ------ */
+/* Barre de filtres */
+#barreFiltres {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
 
+/* Mot "Filtres" */
+p {
+	margin-right: 40px;
+}
+
+/* Filtres */
+.filtre {
+	width: auto;
+	margin-right: 30px;
+	padding-right: 20px;
+	background-color: white;
+	border-radius: 35px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #F2F2F2;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.pictoFiltre {
+	width: 50px;
+	margin-right: 20px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-style: none;
+	border-radius: 50%;
+	border-color: sienna;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 /* ------ Fin du HEADER ------ */
 
 
 
 /* ------ Début du MAIN ------*/
+/* block des hébergements et des hébergements populaires */
+#blockHebergements {
+	width: auto;
+	background-color: yellow;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 
+/* block des hébergements */
+article {
+	width: 700px;
+	padding: 30px;
+	background-color: blue;
+}
+.blockVignettesHebergements {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+/* figure hébergements */
+.figureHebergement {
+	background-color: hotpink;
+}
+/* vignettes hébergements */
+.vignetteHebergement {
+	width: 200px;
+	height: 125px;
+	object-fit: cover;
+}
+
+/* block des hébergements populaires */
+aside {
+	width: 305px;
+	background-color: green;
+}
 /* ------ Fin du MAIN ------ */
 
 
 
 /* ------ Début du FOOTER ------ */
 
-/* ------ Fin du FOOTER ------ */
+/* ------ Fin du Footer ------ */
