@@ -3,20 +3,21 @@
 /* Définition d'options générales de la page*/
 * {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1em;
+	font-size: 100%;
 	margin: 0;
 	padding: 0;
 }
 h1, h2 {
 	font-weight: bold;
-	font-size: 1.3em;
+	font-size: 130%;
 }
 h3, h4 {
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 100%;
 }
 a {
 	text-decoration: none;
+	color: black;
 }
 ul {
 	list-style: none;
@@ -24,8 +25,12 @@ ul {
 header, main {
 	margin: 0 40px 0 40px;
 }
-
-
+.noteEtoiles {
+	color: #0065FC;
+}
+.greyStar {
+	color: #F2F2F2;
+}
 
 /* ------ Début du bloc entourant toute la page ------ */
 #blockPage {
@@ -40,8 +45,7 @@ header, main {
 /* ------ Début du HEADER ------ */
 /* Logo et navigation */
 #logoNavigation {
-	padding-top: 40px;
-	margin-bottom: 40px;
+	margin: 30px 0 30px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -60,8 +64,17 @@ header, main {
 	align-items: center;
 	flex-wrap: wrap;
 }
+.lienNavigation:hover {
+	border-top: 3px solid #0065FC;
+}
+.ancreSection:hover {
+	color: #0065FC;
+}
 #inscription {
 	font-weight: bold;
+}
+#inscription:visited {
+	color: #0065FC;
 }
 /* Titre et description */
 h1, h1 + p {
@@ -74,13 +87,14 @@ h1, h1 + p {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: wrap;
 }
 #pictoGPS {
 	width: 50px;
 	height: 50px;
 	background-color: #F2F2F2;
 	border-radius: 15px 0 0 15px;
-	font-size: 1.3em;
+	font-size: 130%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -97,7 +111,7 @@ h1, h1 + p {
 	background-color: #0065FC;
 	border-style: none;
 	border-radius: 0 15px 15px 0;
-	font-size: 1.3em;
+	font-size: 130%;
 	font-weight: bold;
 	color: white;
 }
@@ -107,7 +121,7 @@ h1, h1 + p {
 	background-color: #0065FC;
 	border-style: none;
 	border-radius: 15px 15px 15px 15px;
-	font-size: 1.3em;
+	font-size: 130%;
 	font-weight: bold;
 	color: white;
 }
@@ -150,12 +164,17 @@ h1, h1 + p {
 	margin: auto;
 	padding: 0 15px 0 10px;
 }
+.filtre:hover {
+	color: white;
+	background-color: #0065FC;
+}
 /* Barre d'information */
 #barreInformation {
 	margin-bottom: 30px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .pictoInformation {
 	width: 30px;
@@ -175,7 +194,7 @@ h1, h1 + p {
 /* ------ Début du MAIN ------*/
 /* Hébergements */
 #blockHebergements {
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -189,7 +208,7 @@ article {
 	border-radius: 15px;
 }
 article h2 {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 .blockVignettesHebergements {
 	display: flex;
@@ -203,6 +222,7 @@ article h2 {
 	margin: 0 0 30px 0;
 	padding: 3px;
 	border-radius: 15px;
+	box-shadow: 0 0 15px #F2F2F2;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -222,6 +242,9 @@ article h2 {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: flex-start;
+}
+#lienHebergementsPlus {
+	font-weight: bold;
 }
 
 /* Hébergements: aside */
@@ -243,7 +266,7 @@ aside h2 {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 }
 .figurePopulaire {
@@ -252,6 +275,7 @@ aside h2 {
 	height: 125px;
 	padding: 3px;
 	border-radius: 15px;
+	box-shadow: 0 0 15px #F2F2F2;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -279,6 +303,12 @@ aside h2 {
 }
 
 /* Activités à Marseille */
+#sectionActivites {
+	margin-bottom: 60px;
+}
+#sectionActivites h2 {
+	margin-bottom: 15px;
+}
 #placementActivites {
 	max-width: 1440px;
 	display: flex;
@@ -289,7 +319,8 @@ aside h2 {
 .figureActivite {
 	width: 315px;
 	border-radius: 15px;
-	background-color: grey;
+	background-color: white;
+	box-shadow: 0 0 15px #F2F2F2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -309,6 +340,7 @@ aside h2 {
 	border-radius: 15px 15px 0 0;
 }
 .blockDeuxActivites {
+	min-height: 425px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -316,12 +348,12 @@ aside h2 {
 }
 #fortDePomegues {
 	width: 100%;
-	height: 150px;
+	height: 185px;
 	object-fit: cover;
 }
 #ilesDuFrioul {
 	width: 100%;
-	height: 75px;
+	height: 100px;
 	object-fit: cover;
 }
 #notreDameDeLaGarde {
@@ -360,7 +392,7 @@ h4 {
 	width: 33%;
 }
 .puceListeFooter {
-	font-size: 0.9em;;
+	font-size: 90%;
 	padding: 5px 0 5px 0;
 }
 /* ------ Fin du Footer ------ */
