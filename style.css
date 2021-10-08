@@ -35,7 +35,7 @@ header, main {
 /* ------ Début du bloc entourant toute la page ------ */
 #blockPage {
 	/*background-color: lightblue;*/
-	max-width: 1440px;
+	width: 1280px;
 	margin: auto;
 }
 /* ------ Fin du bloc entourant la page ------ */
@@ -45,27 +45,34 @@ header, main {
 /* ------ Début du HEADER ------ */
 /* Logo et navigation */
 #logoNavigation {
-	margin: 30px 0 30px 0;
+	margin: 0 0 30px 0;
+	padding-top: 0;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	flex-wrap: wrap;
 }
 /* Logo */
 #logoReservia {
 	width: 97px;
 	height: 45px;
+	margin-top: 30px
 }
 /* Navigation */
 #listeNavigation {
 	width: 350px;
+	height: 60px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 	flex-wrap: wrap;
 }
-.lienNavigation:hover {
+nav ul li:hover {
+	height: 60px;
 	border-top: 3px solid #0065FC;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 .ancreSection:hover {
 	color: #0065FC;
@@ -202,7 +209,7 @@ h1, h1 + p {
 
 /* Hébergements: article */
 article {
-	max-width: 66%;
+	width: 63%;
 	padding: 30px;
 	background-color: #F2F2F2;
 	border-radius: 15px;
@@ -217,8 +224,8 @@ article h2 {
 	flex-wrap: wrap;
 }
 .figureHebergement {
-	max-width: 275px;
-	height: 200px;
+	width: 230px;
+	height: 207px;
 	margin: 0 0 30px 0;
 	padding: 3px;
 	border-radius: 15px;
@@ -230,7 +237,7 @@ article h2 {
 	align-items: flex-start;
 }
 .vignetteHebergement {
-	width: 275px;
+	width: 230px;
 	height: 125px;
 	object-fit: cover;
 	border-radius: 15px 15px 0 0;
@@ -250,7 +257,7 @@ article h2 {
 /* Hébergements: aside */
 aside {
 	background-color: #F2F2F2;
-	max-width: 33%;
+	width: 25%;
 	padding: 30px 30px 0 30px;
 	border-radius: 15px;
 	display: flex;
@@ -271,7 +278,7 @@ aside h2 {
 }
 .figurePopulaire {
 	background-color: white;
-	max-width: 300px;
+	width: 295px;
 	height: 125px;
 	padding: 3px;
 	border-radius: 15px;
