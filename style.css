@@ -84,8 +84,11 @@ nav ul li:hover {
 	color: #0065FC;
 }
 /* Titre et description */
-h1, h1 + p {
+h1 {
 	margin-bottom: 10px;
+}
+h1 + p {
+	margin: 10px 0 20px 0;
 }
 /* Barre de recherche */
 #barreDeRecherche {
@@ -95,6 +98,12 @@ h1, h1 + p {
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
+}
+#pictoSaisie {
+	border: 1px solid #F2F2F2;
+	border-radius: 15px 0 0 15px;
+	display:flex;
+	justify-content: start;
 }
 #pictoGPS {
 	width: 50px;
@@ -109,12 +118,13 @@ h1, h1 + p {
 .saisieTexte {
 	width: auto;
 	height: 50px;
-	border-style: solid;
-	border-width: 2px 0 2px 0;
+	padding: 10px;
+	border: 1px solid #F2F2F2;
 	font-weight: bold;
 }
 .boutonDesktop {
 	height: 50px;
+	padding: 10px;
 	background-color: #0065FC;
 	border-style: none;
 	border-radius: 0 15px 15px 0;
