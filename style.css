@@ -223,6 +223,9 @@ article h2 {
 	align-items: flex-start;
 	flex-wrap: wrap;
 }
+.blockVignettesHebergements a {
+	width: 100%;
+}
 .figureHebergement {
 	width: 230px;
 	height: 207px;
@@ -237,7 +240,7 @@ article h2 {
 	align-items: flex-start;
 }
 .vignetteHebergement {
-	width: 230px;
+	width: 100%;
 	height: 125px;
 	object-fit: cover;
 	border-radius: 15px 15px 0 0;
@@ -320,11 +323,10 @@ aside h2 {
 	max-width: 1440px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	flex-wrap: wrap;
 }
 .figureActivite {
-	width: 315px;
+	width: 275px;
 	border-radius: 15px;
 	background-color: white;
 	box-shadow: 0 0 15px #F2F2F2;
@@ -342,8 +344,10 @@ aside h2 {
 	height: 370px;
 	object-fit: cover;
 }
-.largeurImgActivite {
-	max-width: 100%;
+.imgActivite {
+	width: 100%;
+	height: 375px;
+	object-fit: cover;
 	border-radius: 15px 15px 0 0;
 }
 .blockDeuxActivites {
