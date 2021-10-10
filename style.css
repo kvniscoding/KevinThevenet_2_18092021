@@ -34,8 +34,7 @@ header, main {
 
 /* ------ Début du bloc entourant toute la page ------ */
 #blockPage {
-	/*background-color: lightblue;*/
-	width: 1280px;
+	max-width: 1280px;
 	margin: auto;
 }
 /* ------ Fin du bloc entourant la page ------ */
@@ -93,14 +92,16 @@ h1 + p {
 /* Barre de recherche */
 #barreDeRecherche {
 	width: auto;
+	min-width: 375px;
 	height: 50px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	flex-wrap: wrap;
 }
 #pictoSaisie {
-	border: 1px solid #F2F2F2;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	border-left: 1px solid #F2F2F2;
 	border-radius: 15px 0 0 15px;
 	display:flex;
 	justify-content: start;
@@ -123,7 +124,7 @@ h1 + p {
 	font-weight: bold;
 }
 .boutonDesktop {
-	height: 50px;
+	height: 52px;
 	padding: 10px;
 	background-color: #0065FC;
 	border-style: none;
@@ -133,7 +134,7 @@ h1 + p {
 	color: white;
 }
 .boutonSmartphone {
-	width: 50px;
+	width: 52px;
 	height: 50px;
 	background-color: #0065FC;
 	border-style: none;
@@ -141,10 +142,11 @@ h1 + p {
 	font-size: 130%;
 	font-weight: bold;
 	color: white;
+	display: none;
 }
 /* Barre de filtres */
 #barreFiltres {
-	height: 50px;
+	min-height: 50px;
 	margin: 30px 0 30px 0px ;
 	font-weight: bold;
 	display: flex;
@@ -214,13 +216,14 @@ h1 + p {
 	margin-bottom: 60px;
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
 }
 
 /* Hébergements: article */
 article {
 	width: 63%;
 	padding: 30px;
+	margin-bottom: 30px;
 	background-color: #F2F2F2;
 	border-radius: 15px;
 }
@@ -271,7 +274,9 @@ article h2 {
 aside {
 	background-color: #F2F2F2;
 	width: 25%;
+	min-width: 295px;
 	padding: 30px 30px 0 30px;
+	margin-bottom: 30px;
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
@@ -284,9 +289,10 @@ aside h2 {
 }
 .blockVignettesPopulaires {
 	height: 100%;
+	padding: 0px 0 30px 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 }
 .figurePopulaire {
@@ -294,6 +300,7 @@ aside h2 {
 	width: 295px;
 	height: 125px;
 	padding: 3px;
+	margin: 30px 0 15px 0;
 	border-radius: 15px;
 	box-shadow: 0 0 15px #F2F2F2;
 	display: flex;
@@ -324,7 +331,7 @@ aside h2 {
 
 /* Activités à Marseille */
 #sectionActivites {
-	margin-bottom: 60px;
+	margin: -30px 0 60px 0;
 }
 #sectionActivites h2 {
 	margin-bottom: 15px;
@@ -340,6 +347,7 @@ aside h2 {
 	border-radius: 15px;
 	background-color: white;
 	box-shadow: 0 0 15px #F2F2F2;
+	margin-bottom: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -396,15 +404,18 @@ footer {
 	max-width: 1440px;
 	min-width: 375px;
 	margin: auto;
-	padding: 40px;
+	padding: 30px 0 0 30px; 
 	background-color: #F2F2F2;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-start;
 }
 
 /* Paramètres généraux des listes */
+.blockListeFooter {
+	margin: 0 0 30px 0;
+}
 h4 {
 	margin-bottom: 15px;
 }
@@ -413,6 +424,7 @@ h4 {
 	width: 33%;
 }
 .puceListeFooter {
+	margin: 0;
 	font-size: 90%;
 	padding: 5px 0 5px 0;
 }
