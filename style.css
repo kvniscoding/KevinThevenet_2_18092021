@@ -134,14 +134,6 @@ h1 + p {
 	color: white;
 }
 .boutonSmartphone {
-	width: 52px;
-	height: 50px;
-	background-color: #0065FC;
-	border-style: none;
-	border-radius: 15px 15px 15px 15px;
-	font-size: 130%;
-	font-weight: bold;
-	color: white;
 	display: none;
 }
 /* Barre de filtres */
@@ -429,3 +421,111 @@ h4 {
 	padding: 5px 0 5px 0;
 }
 /* ------ Fin du Footer ------ */
+
+
+/* ------ Media Queries ------ */
+@media all and (max-device-width: 480px) {
+	/* Block pour toute la page */
+	#blockPage {
+		width: 375px;
+		padding: 0 20px 0 20px;
+	}
+	/* --- header --- */
+	header {
+		margin: 0;
+	}
+	#barreDeRecherche {
+		width: 375px;
+	}
+	#pictoSaisie {
+		margin-right: -15px;
+	}
+	.saisieTexte {
+		width: 288px;
+	}
+	.boutonDesktop {
+		display: none;
+	}
+	.boutonSmartphone {
+		width: 50px;
+		height: 50px;
+		background-color: #0065FC;
+		border-style: none;
+		border-radius: 15px;
+		font-size: 130%;
+		font-weight: bold;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#barreInformation {
+		flex-wrap: nowrap;
+	}
+
+
+
+	/* --- main --- */
+	main {
+		margin: 0%;
+	}
+
+	/* --- aside --- */
+	aside {
+		width: 100%;
+		margin: 0 -20px 30px -20px;
+		border-radius: 0%;
+	}
+	.blockVignettesPopulaires {
+		height: 410px;
+		margin: 20px 0 0 0;
+	}
+	aside div a {
+		height: 125px;
+	}
+	.figurePopulaire {
+		width: 375px;
+		margin: 0;
+	}
+
+	/* --- article --- */
+	#blockHebergements {
+		margin: 0 0 20px 0;
+	}
+	article {
+		width: 100%;
+		padding: 0%;
+		background-color: white;
+		border: none;
+	}
+	.figureHebergement {
+		width: 375px;
+		margin: 0 0 20px 0;
+	}
+	#lienHebergementsPlus {
+		margin-top: 10px;
+	}
+
+	/* --- activités --- */
+	#sectionActivites {
+		margin: 0;
+	}
+	.figureActivite {
+		width: 375px;
+	}
+	.imgActivite {
+		height: 150px;
+	}
+	#fortDePomegues, #ilesDuFrioul, #notreDameDeLaGarde, #parcLongchamp {
+		height: 150px;
+	}
+	
+	
+	
+	/* --- Footer --- */
+	footer {
+		width: 100%;
+		margin: 20px -20px 0 -20px;
+		padding: 30px 20px 0 20px;
+	}
+} /* Fin des media queries */
