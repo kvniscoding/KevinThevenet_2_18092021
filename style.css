@@ -427,15 +427,15 @@ h4 {
 @media all and (max-device-width: 480px) {
 	/* Block pour toute la page */
 	#blockPage {
-		width: 375px;
+		max-width: 480px;
 		padding: 0 20px 0 20px;
 	}
 	/* --- header --- */
 	header {
 		margin: 0;
 	}
-	#barreDeRecherche {
-		width: 375px;
+	#barreRecherche {
+		justify-content: space-between;
 	}
 	#pictoSaisie {
 		margin-right: -15px;
