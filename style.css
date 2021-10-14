@@ -52,19 +52,23 @@ header, main {
 	flex-wrap: wrap;
 }
 /* Logo */
-#logoReservia {
+#logoBooki {
 	width: 97px;
 	height: 45px;
-	margin-top: 30px
+	margin: 30px 0 0 0;
 }
 /* Navigation */
 #listeNavigation {
 	width: 350px;
 	height: 60px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-end;
 	flex-wrap: wrap;
+}
+nav ul li {
+	width: 50%;
+	text-align: center;
 }
 nav ul li:hover {
 	height: 60px;
@@ -76,12 +80,7 @@ nav ul li:hover {
 .ancreSection:hover {
 	color: #0065FC;
 }
-#inscription {
-	font-weight: bold;
-}
-#inscription:visited {
-	color: #0065FC;
-}
+
 /* Titre et description */
 h1 {
 	margin-bottom: 10px;
@@ -119,9 +118,12 @@ h1 + p {
 .saisieTexte {
 	width: auto;
 	height: 50px;
-	padding: 10px;
+	padding: 0 0 0 10px;
 	border: 1px solid #F2F2F2;
 	font-weight: bold;
+}
+.saisieTexte:focus {
+	outline: none;
 }
 .boutonDesktop {
 	height: 52px;
@@ -204,7 +206,7 @@ h1 + p {
 
 /* ------ Début du MAIN ------*/
 /* Hébergements */
-#blockHebergements {
+#sectionHebergements {
 	margin-bottom: 60px;
 	display: flex;
 	justify-content: space-between;
@@ -434,6 +436,24 @@ h4 {
 	header {
 		margin: 0;
 	}
+	/* --- nav --- */
+	nav {
+		width: 100%;
+	}
+	#listeNavigation {
+		width: 100%;
+		justify-content: flex-end;
+		align-items: flex-end;
+		flex-wrap: wrap-reverse;
+	}
+	nav ul li {
+		width: 50%;
+		text-align: center;
+	}
+	#inscription {
+		margin-top: -30px;
+		text-align: end;
+	}
 	#barreRecherche {
 		justify-content: space-between;
 	}
@@ -489,7 +509,7 @@ h4 {
 	}
 
 	/* --- article --- */
-	#blockHebergements {
+	#sectionHebergements {
 		margin: 0 0 20px 0;
 	}
 	article {
