@@ -90,8 +90,6 @@ h1 + p {
 }
 /* Barre de recherche */
 #barreDeRecherche {
-	width: auto;
-	min-width: 375px;
 	height: 50px;
 	display: flex;
 	justify-content: flex-start;
@@ -268,7 +266,6 @@ article h2 {
 aside {
 	background-color: #F2F2F2;
 	width: 25%;
-	min-width: 295px;
 	padding: 30px 30px 0 30px;
 	margin-bottom: 30px;
 	border-radius: 15px;
@@ -291,7 +288,7 @@ aside h2 {
 }
 .figurePopulaire {
 	background-color: white;
-	width: 295px;
+	width: 100%;
 	height: 125px;
 	padding: 3px;
 	margin: 30px 0 15px 0;
@@ -426,15 +423,18 @@ h4 {
 
 
 /* ------ Media Queries ------ */
-@media all and (max-device-width: 480px) {
+@media all and (max-device-width: 767px) {
 	/* Block pour toute la page */
 	#blockPage {
-		max-width: 480px;
 		padding: 0 20px 0 20px;
 	}
 	/* --- header --- */
 	header {
 		margin: 0;
+	}
+	/* --- logo --- */
+	header div figure {
+		margin: auto;
 	}
 	/* --- nav --- */
 	nav {
@@ -454,6 +454,9 @@ h4 {
 		margin-top: -30px;
 		text-align: end;
 	}
+	form {
+		width: 100%;
+	}
 	#barreRecherche {
 		justify-content: space-between;
 	}
@@ -461,7 +464,7 @@ h4 {
 		margin-right: -15px;
 	}
 	.saisieTexte {
-		width: 288px;
+		width: 100%;
 	}
 	.boutonDesktop {
 		display: none;
@@ -502,9 +505,9 @@ h4 {
 	}
 	aside div a {
 		height: 125px;
+		width: 100%;
 	}
 	.figurePopulaire {
-		width: 375px;
 		margin: 0;
 	}
 
@@ -519,7 +522,7 @@ h4 {
 		border: none;
 	}
 	.figureHebergement {
-		width: 375px;
+		width: 100%;
 		margin: 0 0 20px 0;
 	}
 	#lienHebergementsPlus {
@@ -531,10 +534,13 @@ h4 {
 		margin: 0;
 	}
 	.figureActivite {
-		width: 375px;
+		width: 100%;
 	}
 	.imgActivite {
 		height: 150px;
+	}
+	.blockDeuxActivites {
+		width: 100%;
 	}
 	#fortDePomegues, #ilesDuFrioul, #notreDameDeLaGarde, #parcLongchamp {
 		height: 150px;
@@ -544,7 +550,6 @@ h4 {
 	
 	/* --- Footer --- */
 	footer {
-		width: 100%;
 		margin: 20px -20px 0 -20px;
 		padding: 30px 20px 0 20px;
 	}
