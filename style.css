@@ -138,8 +138,13 @@ h1 + p {
 }
 /* Barre de filtres */
 #barreFiltres {
-	min-height: 50px;
-	margin: 30px 0 30px 0px ;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+#boutonsFiltres {
+	margin: 15px 0 30px 0px ;
 	font-weight: bold;
 	display: flex;
 	flex-wrap: wrap;
@@ -149,6 +154,7 @@ h1 + p {
 /* Titre barre de filtres */
 #pFiltres {
 	margin-right: 20px;
+	font-weight: bold;
 }
 /* Filtres */
 .filtre {
@@ -424,16 +430,17 @@ h4 {
 /* ------ Media Queries ------ */
 @media all and (max-device-width: 767px) {
 	/* Block pour toute la page */
-	#blockPage {
-		padding: 0 20px 0 20px;
-	}
 	/* --- header --- */
 	header {
+		padding: 0 20px;
 		margin: 0;
 	}
 	/* --- logo --- */
 	header div figure {
 		margin: auto;
+	}
+	#logoBooki {
+		margin: 20px 0;
 	}
 	/* --- nav --- */
 	nav {
@@ -441,17 +448,23 @@ h4 {
 	}
 	#listeNavigation {
 		width: 100%;
+		margin-bottom: -40px;
 		justify-content: flex-end;
 		align-items: flex-end;
 		flex-wrap: wrap-reverse;
+	}
+	.ancreSection:active {
+		padding-bottom: 10px;
+		color: #0065FC;
+		border-bottom: 3px solid #0065FC;
 	}
 	nav ul li {
 		width: 50%;
 		text-align: center;
 	}
-	#inscription {
-		margin-top: -30px;
-		text-align: end;
+	/* --- barre de recherche --- */
+	#barreDeRecherche {
+		margin: auto;
 	}
 	form {
 		width: 100%;
@@ -460,6 +473,7 @@ h4 {
 		justify-content: space-between;
 	}
 	#pictoSaisie {
+		width: 100%;
 		margin-right: -15px;
 	}
 	.saisieTexte {
@@ -481,8 +495,26 @@ h4 {
 		justify-content: center;
 		align-items: center;
 	}
+	/* --- Filtres --- */
+	#barreFiltres {
+		padding: 30px 0 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.filtre {
+		margin: 5px;
+	}
+	/* --- Barre d'information --- */
 	#barreInformation {
 		flex-wrap: nowrap;
+		align-items: baseline;
+	}
+	.pictoInformation {
+		min-width: 30px;
+		max-height: 30px;
 	}
 
 
@@ -495,7 +527,6 @@ h4 {
 	/* --- aside --- */
 	aside {
 		width: 100%;
-		margin: 0 -20px 30px -20px;
 		border-radius: 0%;
 	}
 	.blockVignettesPopulaires {
@@ -516,7 +547,7 @@ h4 {
 	}
 	article {
 		width: 100%;
-		padding: 0%;
+		padding: 0 20px;
 		background-color: white;
 		border: none;
 	}
@@ -530,6 +561,7 @@ h4 {
 
 	/* --- activités --- */
 	#sectionActivites {
+		padding: 0 20px;
 		margin: 0;
 	}
 	.figureActivite {
@@ -549,7 +581,17 @@ h4 {
 	
 	/* --- Footer --- */
 	footer {
-		margin: 20px -20px 0 -20px;
-		padding: 30px 20px 0 20px;
+		width: 100%;
+		padding: 0 0 30px 0;
+		margin: auto;
+	}
+	.blockListeFooter {
+		width: 100%;
+		padding: 30px 0 0 20px;
+		margin: 0;
+	}
+	.listeFooter {
+		width: 100%;
+		min-width: 0;
 	}
 } /* Fin des media queries */
