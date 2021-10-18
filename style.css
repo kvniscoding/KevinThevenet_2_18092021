@@ -11,7 +11,7 @@ h1, h2 {
 	font-weight: bold;
 	font-size: 130%;
 }
-h3, h4 {
+h3, .titreListeFooter{
 	font-weight: bold;
 	font-size: 100%;
 }
@@ -416,9 +416,7 @@ aside h2 {
 
 /* ------ Début du FOOTER ------ */
 footer {
-	width: 100%;
-	margin: auto;
-	padding: 30px 0 0 30px; 
+	width: 100%; 
 	background-color: #F2F2F2;
 	display: flex;
 	flex-wrap: wrap;
@@ -428,19 +426,18 @@ footer {
 
 /* Paramètres généraux des listes */
 .blockListeFooter {
-	margin: 0 0 30px 0;
+	padding: 30px 0 30px 30px;
 }
-h4 {
+.titreListeFooter {
 	margin-bottom: 15px;
 }
 .listeFooter {
-	min-width: 375px;
-	width: 33%;
+	width: 375px;
 }
 .puceListeFooter {
 	margin: 0;
 	font-size: 90%;
-	padding: 5px 0 5px 0;
+	padding: 0 0 5px 0;
 }
 /* ------ Fin du Footer ------ */
 
@@ -449,6 +446,9 @@ h4 {
 /* ------ Media Queries ------ */
 /* --- Tablette --- */
 @media all and (max-device-width: 991px) {
+	h1 + p {
+		margin: 10px 0 30px 0;
+	}
 	/* --- nav --- */
 	#listeNavigation {
 		width: 250px;
@@ -492,6 +492,11 @@ h4 {
 	.figurePopulaire .vignettePopulaire {
 		width: 100%;
 		border-radius: 15px;
+	}
+
+	/* --- Activités --- */
+	.figureActivite {
+		width: 75%
 	}
 }
 
@@ -601,14 +606,13 @@ h4 {
 	/* --- Barre d'information --- */
 	#barreInformation {
 		width: 100%;
-		padding: 0 20px;
 		margin: 0 0 30px 0;
 		flex-wrap: nowrap;
 		align-items: baseline;
 	}
 	.pictoInformation {
 		padding: 0;
-		margin: 0;
+		margin: 0 0 0 20px;
 		min-width: 30px;
 		max-height: 30px;
 	}
@@ -621,6 +625,9 @@ h4 {
 	/* --- main --- */
 	main {
 		margin: 0%;
+	}
+	#sectionHebergements {
+		margin: 0 0 30px 0;
 	}
 
 	/* --- aside --- */
@@ -642,11 +649,12 @@ h4 {
 
 	/* --- article --- */
 	#sectionHebergements {
-		margin: 0 0 20px 0;
+		margin: 0 0 30px 0;
 	}
 	article {
 		width: 100%;
 		padding: 0 20px;
+		margin: 0;
 		background-color: white;
 		border: none;
 	}
@@ -657,6 +665,9 @@ h4 {
 		width: 100%;
 		padding: 0;
 		margin: 0 0 20px 0;
+	}
+	.infoHebergement {
+		padding:  5px 5px 0 5px;
 	}
 	
 	/* --- activités --- */
@@ -687,17 +698,13 @@ h4 {
 	
 	/* --- Footer --- */
 	footer {
-		width: 100%;
 		padding: 0 0 30px 0;
-		margin: auto;
 	}
 	.blockListeFooter {
 		width: 100%;
 		padding: 30px 0 0 20px;
-		margin: 0;
 	}
 	.listeFooter {
 		width: 100%;
-		min-width: 0;
 	}
 } /* Fin des media queries */
