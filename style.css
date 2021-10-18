@@ -450,7 +450,6 @@ h4 {
 	/* Block pour toute la page */
 	/* --- header --- */
 	header {
-		padding: 0 20px;
 		margin: 0;
 	}
 	/* --- logo --- */
@@ -466,22 +465,34 @@ h4 {
 	}
 	#listeNavigation {
 		width: 100%;
-		margin-bottom: -40px;
+		height: auto;
+		/*margin-bottom: -40px;*/
 		justify-content: flex-end;
 		align-items: flex-end;
 		flex-wrap: wrap-reverse;
-	}
-	.ancreSection:active {
-		padding-bottom: 10px;
-		color: #0065FC;
-		border-bottom: 3px solid #0065FC;
 	}
 	nav ul li {
 		width: 50%;
 		text-align: center;
 	}
+	nav ul li:active {
+		padding-bottom: 10px;
+		color: #0065FC;
+		border-bottom: 3px solid #0065FC;
+	}
+
+	/* --- barre titre et présentation --- */
+	header h1 {
+		padding: 0 20px;
+		margin: 0;
+	}
+	header p {
+		padding: 10px 20px 30px 20px;
+		margin: 0;
+	}
 	/* --- barre de recherche --- */
 	#barreDeRecherche {
+		padding: 0 20px;
 		margin: auto;
 	}
 	form {
@@ -514,6 +525,10 @@ h4 {
 		align-items: center;
 	}
 	/* --- Filtres --- */
+	#pFiltres {
+		padding: 0 0 10px 20px;
+		margin: 0;
+	}
 	#barreFiltres {
 		padding: 30px 0 0 0;
 		display: flex;
@@ -522,17 +537,29 @@ h4 {
 		justify-content: flex-start;
 		align-items: flex-start;
 	}
+	#boutonsFiltres {
+		padding: 0 20px;
+		margin: 0 0 30px 0;
+	}
 	.filtre {
-		margin: 5px;
+		margin: 5px 0 0 0;
 	}
 	/* --- Barre d'information --- */
 	#barreInformation {
+		width: 100%;
+		padding: 0 20px;
+		margin: 0 0 30px 0;
 		flex-wrap: nowrap;
 		align-items: baseline;
 	}
 	.pictoInformation {
+		padding: 0;
+		margin: 0;
 		min-width: 30px;
 		max-height: 30px;
+	}
+	.texteInformation {
+		padding: 0 0 0 10px;
 	}
 
 
@@ -577,10 +604,7 @@ h4 {
 		padding: 0;
 		margin: 0 0 20px 0;
 	}
-	#lienHebergementsPlus {
-		margin-top: 10px;
-	}
-
+	
 	/* --- activités --- */
 	#sectionActivites {
 		padding: 0 20px;
