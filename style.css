@@ -235,12 +235,12 @@ article h2 {
 	flex-wrap: wrap;
 }
 .blockVignettesHebergements a {
-	width: 100%;
+	height: 207px;
+	margin: 0 0 30px 0;
 }
 .figureHebergement {
 	width: 230px;
 	height: 207px;
-	margin: 0 0 30px 0;
 	padding: 3px;
 	border-radius: 15px;
 	box-shadow: 0 0 15px #F2F2F2;
@@ -292,12 +292,16 @@ aside h2 {
 	justify-content: space-between;
 	align-items: center;
 }
+.blockVignettesPopulaires a {
+	height: 125px;
+	margin: 30px 0 0 0;
+}
 .figurePopulaire {
 	background-color: white;
 	width: 100%;
 	height: 125px;
 	padding: 3px;
-	margin: 30px 0 15px 0;
+	margin: 0 0 15px 0;
 	border-radius: 15px;
 	box-shadow: 0 0 15px #F2F2F2;
 	display: flex;
@@ -366,26 +370,40 @@ aside h2 {
 	border-radius: 15px 15px 0 0;
 }
 .blockDeuxActivites {
-	min-height: 425px;
+	height: 430px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+}
+#lienFortDePomegues {
+	height: 240px;
+	margin: 0 0 30px 0;
 }
 #fortDePomegues {
 	width: 100%;
 	height: 185px;
 	object-fit: cover;
 }
+#lienIlesDuFrioul {
+	height: 155px;
+	margin: 0;
+}
 #ilesDuFrioul {
 	width: 100%;
 	height: 100px;
 	object-fit: cover;
 }
+#lienNotreDameDeLaGarde {
+	height: 195px;
+}
 #notreDameDeLaGarde {
 	width: 100%;
 	height: 140px;
 	object-fit: cover;
+}
+#lienParcLongchamp {
+	height: 200px;
 }
 #parcLongchamp {
 	width: 100%;
@@ -527,18 +545,18 @@ h4 {
 	/* --- aside --- */
 	aside {
 		width: 100%;
+		padding: 40px 20px 30px 20px;
 		border-radius: 0%;
 	}
 	.blockVignettesPopulaires {
-		height: 410px;
-		margin: 20px 0 0 0;
+		padding: 0;
 	}
 	aside div a {
 		height: 125px;
 		width: 100%;
 	}
 	.figurePopulaire {
-		margin: 0;
+		margin: -3px;
 	}
 
 	/* --- article --- */
@@ -551,8 +569,12 @@ h4 {
 		background-color: white;
 		border: none;
 	}
+	.blockVignettesHebergements a {
+		width: 100%;
+	}
 	.figureHebergement {
 		width: 100%;
+		padding: 0;
 		margin: 0 0 20px 0;
 	}
 	#lienHebergementsPlus {
@@ -564,6 +586,11 @@ h4 {
 		padding: 0 20px;
 		margin: 0;
 	}
+	#sectionActivites a {
+		width: 100%;
+		height: 205px;
+		margin: 0 0 30px 0;
+	}
 	.figureActivite {
 		width: 100%;
 	}
@@ -572,6 +599,7 @@ h4 {
 	}
 	.blockDeuxActivites {
 		width: 100%;
+		height: auto;
 	}
 	#fortDePomegues, #ilesDuFrioul, #notreDameDeLaGarde, #parcLongchamp {
 		height: 150px;
