@@ -445,7 +445,57 @@ h4 {
 /* ------ Fin du Footer ------ */
 
 
+
 /* ------ Media Queries ------ */
+/* --- Tablette --- */
+@media all and (max-device-width: 991px) {
+	/* --- nav --- */
+	#listeNavigation {
+		width: 250px;
+	}
+	nav ul li:active {
+		padding-bottom: 10px;
+		color: #0065FC;
+		border-bottom: 3px solid #0065FC;
+	}
+
+	/* --- Barre de recherche --- */
+	#barreDeRecherche {
+		margin: 0 0 30px 0;
+	}
+
+	/* --- Filtres --- */
+	#boutonsFiltres {
+		margin: 0 0 30px 0;
+	}
+	.filtre:active {
+		color: white;
+		background-color: #0065FC;
+	}
+
+	/* --- Article --- */
+	article {
+		width: 55%;
+	}
+	.figureHebergement {
+		width: 190px;
+	}
+
+	/* --- Aside --- */
+	.blockVignettesPopulaires a {
+		height: 210px;
+	}
+	.figurePopulaire {
+		flex-direction: column;
+		height: 210px;
+	}
+	.figurePopulaire .vignettePopulaire {
+		width: 100%;
+		border-radius: 15px;
+	}
+}
+
+/* --- Smartphone --- */
 @media all and (max-device-width: 767px) {
 	/* Block pour toute la page */
 	/* --- header --- */
@@ -543,6 +593,10 @@ h4 {
 	}
 	.filtre {
 		margin: 5px 0 0 0;
+	}
+	.filtre:active {
+		color: white;
+		background-color: #0065FC;
 	}
 	/* --- Barre d'information --- */
 	#barreInformation {
