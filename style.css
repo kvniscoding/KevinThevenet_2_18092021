@@ -31,17 +31,16 @@ header, main {
 .greyStar {
 	color: #F2F2F2;
 }
-
-/* ------ Début du bloc entourant toute la page ------ */
+/*  Bloc entourant toute la page */
 #blockPage {
 	max-width: 1280px;
 	margin: auto;
 }
-/* ------ Fin du bloc entourant la page ------ */
+/* Fin paramètres généraux */
 
 
 
-/* ------ Début du HEADER ------ */
+/* Header */
 /* Logo et navigation */
 #logoNavigation {
 	margin: 0 0 30px 0;
@@ -51,12 +50,14 @@ header, main {
 	align-items: flex-start;
 	flex-wrap: wrap;
 }
+
 /* Logo */
 #logoBooki {
 	width: 97px;
 	height: 45px;
 	margin: 30px 0 0 0;
 }
+
 /* Navigation */
 #listeNavigation {
 	width: 350px;
@@ -88,6 +89,7 @@ h1 {
 h1 + p {
 	margin: 10px 0 20px 0;
 }
+
 /* Barre de recherche */
 #barreDeRecherche {
 	height: 50px;
@@ -136,6 +138,7 @@ h1 + p {
 .boutonSmartphone {
 	display: none;
 }
+
 /* Barre de filtres */
 #barreFiltres {
 	display: flex;
@@ -185,6 +188,7 @@ h1 + p {
 	color: white;
 	background-color: #0065FC;
 }
+
 /* Barre d'information */
 #barreInformation {
 	margin-bottom: 30px;
@@ -204,20 +208,19 @@ h1 + p {
 	justify-content: center;
 	align-items: center;
 }
-/* ------ Fin du HEADER ------ */
+/* Fin header */
 
 
 
-/* ------ Début du MAIN ------*/
-/* Hébergements */
+/* Main */
+/* Section hébergements */
 #sectionHebergements {
 	margin-bottom: 60px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap-reverse;
 }
-
-/* Hébergements: article */
+/* Article */
 article {
 	width: 63%;
 	padding: 30px;
@@ -267,8 +270,7 @@ article h2 {
 #lienHebergementsPlus {
 	font-weight: bold;
 }
-
-/* Hébergements: aside */
+/* Aside */
 aside {
 	background-color: #F2F2F2;
 	width: 25%;
@@ -330,7 +332,7 @@ aside h2 {
 	align-items: flex-start;
 }
 
-/* Activités à Marseille */
+/* Activités */
 #sectionActivites {
 	margin: -30px 0 60px 0;
 }
@@ -410,11 +412,11 @@ aside h2 {
 	height: 145px;
 	object-fit: cover;
 }
-/* ------ Fin du MAIN ------ */
+/* Fin main */
 
 
 
-/* ------ Début du FOOTER ------ */
+/* Footer */
 footer {
 	width: 100%; 
 	background-color: #F2F2F2;
@@ -423,7 +425,6 @@ footer {
 	justify-content: flex-start;
 	align-items: flex-start;
 }
-
 /* Paramètres généraux des listes */
 .blockListeFooter {
 	padding: 30px 0 30px 30px;
@@ -439,17 +440,20 @@ footer {
 	font-size: 90%;
 	padding: 0 0 5px 0;
 }
-/* ------ Fin du Footer ------ */
+/* Fin du footer */
 
 
 
-/* ------ Media Queries ------ */
-/* --- Tablette --- */
+/* Media Queries */
+/* Tablettes */
 @media all and (max-device-width: 991px) {
+	/* Header */
+	/* Présentation */
 	h1 + p {
 		margin: 10px 0 30px 0;
 	}
-	/* --- nav --- */
+
+	/* Nav */
 	#listeNavigation {
 		width: 250px;
 	}
@@ -459,12 +463,12 @@ footer {
 		border-bottom: 3px solid #0065FC;
 	}
 
-	/* --- Barre de recherche --- */
+	/* Barre de recherche */
 	#barreDeRecherche {
 		margin: 0 0 30px 0;
 	}
 
-	/* --- Filtres --- */
+	/* Filtres */
 	#boutonsFiltres {
 		margin: 0 0 30px 0;
 	}
@@ -472,12 +476,16 @@ footer {
 		color: white;
 		background-color: #0065FC;
 	}
+	/* Fin du header */
 
-	/* --- main --- */
+
+
+	/* Main */
 	#sectionHebergements {
 		margin: 0 0 30px 0;
 	}
-	/* --- Article --- */
+
+	/* Article */
 	article {
 		width: 55%;
 	}
@@ -488,7 +496,7 @@ footer {
 		width: 100%;
 	}
 
-	/* --- Aside --- */
+	/* Aside */
 	.blockVignettesPopulaires a {
 		height: 210px;
 	}
@@ -501,7 +509,7 @@ footer {
 		border-radius: 15px;
 	}
 
-	/* --- Activités --- */
+	/* Activités */
 	#sectionActivites {
 		margin: 0 0 30px 0;
 	}
@@ -523,22 +531,26 @@ footer {
 		width: 100%;
 	}
 }
+	/* Fin du main */
+/* Fin de la section pour les tablettes */
 
-/* --- Smartphone --- */
+
+
+/* Smartphones */
 @media all and (max-device-width: 767px) {
-	/* Block pour toute la page */
-	/* --- header --- */
+	/* Header */
 	header {
 		margin: 0;
 	}
-	/* --- logo --- */
+
+	/* Logo */
 	header div figure {
 		margin: auto;
 	}
 	#logoBooki {
 		margin: 20px 0;
 	}
-	/* --- nav --- */
+	/* Nav */
 	nav {
 		width: 100%;
 	}
@@ -560,7 +572,7 @@ footer {
 		border-bottom: 3px solid #0065FC;
 	}
 
-	/* --- barre titre et présentation --- */
+	/* Barre titre et présentation */
 	header h1 {
 		padding: 0 20px;
 		margin: 0;
@@ -569,7 +581,8 @@ footer {
 		padding: 10px 20px 30px 20px;
 		margin: 0;
 	}
-	/* --- barre de recherche --- */
+
+	/* Barre de recherche */
 	#barreDeRecherche {
 		padding: 0 20px;
 		margin: auto;
@@ -603,7 +616,8 @@ footer {
 		justify-content: center;
 		align-items: center;
 	}
-	/* --- Filtres --- */
+
+	/* Filtres */
 	#pFiltres {
 		padding: 0 0 10px 20px;
 		margin: 0;
@@ -627,7 +641,8 @@ footer {
 		color: white;
 		background-color: #0065FC;
 	}
-	/* --- Barre d'information --- */
+
+	/* Barre d'information */
 	#barreInformation {
 		width: 100%;
 		margin: 0 0 30px 0;
@@ -643,10 +658,11 @@ footer {
 	.texteInformation {
 		padding: 0 0 0 10px;
 	}
+	/* Fin du header */
 
 
 
-	/* --- main --- */
+	/* Main */
 	main {
 		margin: 0%;
 	}
@@ -654,7 +670,7 @@ footer {
 		margin: 0 0 30px 0;
 	}
 
-	/* --- aside --- */
+	/* Aside */
 	aside {
 		width: 100%;
 		padding: 40px 20px 30px 20px;
@@ -671,7 +687,7 @@ footer {
 		margin: -3px;
 	}
 
-	/* --- article --- */
+	/* Article */
 	#sectionHebergements {
 		margin: 0 0 30px 0;
 	}
@@ -694,7 +710,7 @@ footer {
 		padding:  5px 5px 0 5px;
 	}
 	
-	/* --- activités --- */
+	/* Activités */
 	#sectionActivites {
 		padding: 0 20px;
 		margin: 0;
@@ -717,10 +733,11 @@ footer {
 	#fortDePomegues, #ilesDuFrioul, #notreDameDeLaGarde, #parcLongchamp {
 		height: 150px;
 	}
+	/* Fin de l'aside */
+
 	
 	
-	
-	/* --- Footer --- */
+	/* Footer */
 	footer {
 		padding: 0 0 30px 0;
 	}
@@ -731,4 +748,6 @@ footer {
 	.listeFooter {
 		width: 100%;
 	}
+	/* Fin du footer */
+/* Fin de la section pour les smartphones */
 } /* Fin des media queries */
