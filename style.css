@@ -473,12 +473,19 @@ footer {
 		background-color: #0065FC;
 	}
 
+	/* --- main --- */
+	#sectionHebergements {
+		margin: 0 0 30px 0;
+	}
 	/* --- Article --- */
 	article {
 		width: 55%;
 	}
+	.blockVignettesHebergements a {
+		width: 45%;
+	}
 	.figureHebergement {
-		width: 190px;
+		width: 100%;
 	}
 
 	/* --- Aside --- */
@@ -495,8 +502,25 @@ footer {
 	}
 
 	/* --- Activités --- */
+	#sectionActivites {
+		margin: 0 0 30px 0;
+	}
 	.figureActivite {
-		width: 75%
+		width: 100%;
+	}
+	.blockDeuxActivites {
+		width: 35%;
+	}
+	.blockDeuxActivites a {
+		width: 100%;
+	}
+	#vignetteVieuxPort, #vignetteParcNationalDesCalanques {
+		width: 60%;
+		height: 430px;
+		margin: 0 0 30px 0;
+	}
+	#lienFortDePomegues, #lienIlesDuFrioul, #lienNotreDameDeLaGarde, #lienParcLongchamp {
+		width: 100%;
 	}
 }
 
