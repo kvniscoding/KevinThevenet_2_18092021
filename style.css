@@ -350,7 +350,6 @@ aside h2 {
 	border-radius: 15px;
 	background-color: white;
 	box-shadow: 0 0 15px #F2F2F2;
-	margin-bottom: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -445,6 +444,37 @@ footer {
 
 
 /* Media Queries */
+/* Ecrans en 1024 */
+@media all and (max-device-width: 1024px) {
+	/* Main */
+	/* Hébergements */
+	#sectionHebergements {
+		display: flex;
+		justify-content: space-around;
+	}
+	article {
+		width: 60%;
+	}
+	.blockVignettesHebergements {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	/* Aside */
+	.blockVignettesPopulaires a {
+		height: 100%;
+	}
+	.figurePopulaire {
+		height: 200px;
+	}
+	.figurePopulaire + img {
+		height: 100%;
+	}
+}
+
+
+
 /* Tablettes */
 @media all and (max-device-width: 991px) {
 	/* Header */
@@ -733,7 +763,7 @@ footer {
 	#fortDePomegues, #ilesDuFrioul, #notreDameDeLaGarde, #parcLongchamp {
 		height: 150px;
 	}
-	/* Fin de l'aside */
+	/* Fin du main */
 
 	
 	
