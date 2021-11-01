@@ -457,9 +457,9 @@ footer {
 		width: 250px;
 	}
 	nav ul li:hover {
+		height: auto;
 		border-top: none;
 	}
-
 	nav ul li:active {
 		padding-bottom: 10px;
 		color: #0065FC;
@@ -564,6 +564,10 @@ footer {
 	nav ul li {
 		width: 50%;
 		text-align: center;
+	}
+	nav ul li:hover {
+		height: auto;
+		border-top: none;
 	}
 	nav ul li:active {
 		padding-bottom: 10px;
